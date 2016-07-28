@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="namespacegr_1_1ieee80211ah" kind="namespace">
+    <compoundname>gr::ieee80211ah</compoundname>
+    <innerclass refid="classgr_1_1ieee80211ah_1_1ah__chunks__to__symbols" prot="public">gr::ieee80211ah::ah_chunks_to_symbols</innerclass>
+    <innerclass refid="classgr_1_1ieee80211ah_1_1ah__ofdm__mapper" prot="public">gr::ieee80211ah::ah_ofdm_mapper</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/usr/local/src/gr-ieee80211ah/include/ieee80211ah/ah_chunks_to_symbols.h" line="30" column="1"/>
+  </compounddef>
+</doxygen>
