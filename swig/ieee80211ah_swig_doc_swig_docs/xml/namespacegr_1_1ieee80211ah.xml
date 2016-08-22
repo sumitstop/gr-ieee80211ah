@@ -3,6 +3,7 @@
   <compounddef id="namespacegr_1_1ieee80211ah" kind="namespace">
     <compoundname>gr::ieee80211ah</compoundname>
     <innerclass refid="classgr_1_1ieee80211ah_1_1ah__chunks__to__symbols" prot="public">gr::ieee80211ah::ah_chunks_to_symbols</innerclass>
+    <innerclass refid="classgr_1_1ieee80211ah_1_1ah__ofdm__decode__mac" prot="public">gr::ieee80211ah::ah_ofdm_decode_mac</innerclass>
     <innerclass refid="classgr_1_1ieee80211ah_1_1ah__ofdm__mapper" prot="public">gr::ieee80211ah::ah_ofdm_mapper</innerclass>
     <briefdescription>
     </briefdescription>

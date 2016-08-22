@@ -14,12 +14,20 @@
 
 Params: (NONE)"
 
+%feature("docstring") gr::ieee80211ah::ah_ofdm_decode_mac "<+description of block+>"
+
+%feature("docstring") gr::ieee80211ah::ah_ofdm_decode_mac::make "Return a shared_ptr to a new instance of ieee80211ah::ah_ofdm_decode_mac.
+
+To avoid accidental use of raw pointers, ieee80211ah::ah_ofdm_decode_mac's constructor is in a private implementation class. ieee80211ah::ah_ofdm_decode_mac::make is the public interface for creating new instances.
+
+Params: (log, debug)"
+
 %feature("docstring") gr::ieee80211ah::ah_ofdm_mapper "<+description of block+>"
 
 %feature("docstring") gr::ieee80211ah::ah_ofdm_mapper::make "
 
 Params: (mcs, debug)"
 
-%feature("docstring") gr::ieee80211ah::ah_ofdm_mapper::set_encoding_ah "
+%feature("docstring") gr::ieee80211ah::ah_ofdm_mapper::set_encoding "
 
-Params: (encoding)"
+Params: (mcs)"

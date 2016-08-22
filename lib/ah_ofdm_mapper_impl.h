@@ -46,7 +46,7 @@ namespace gr {
 
      void print_message(const char *msg, size_t len);
 
-     void set_encoding_ah(Encoding encoding);
+     void set_encoding(Encoding encoding);
 
      private:
       // Nothing to declare in this block.

@@ -89,7 +89,7 @@ namespace gr {
 
    	switch (encoding) {
    	case BPSK_1_2:
-   	//case BPSK_3_4:
+   	case BPSK_3_4:
    		mapping = BPSK;
    		break;
 

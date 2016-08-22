@@ -4,10 +4,14 @@
     <member refid="classgr_1_1ieee80211ah_1_1ah__chunks__to__symbols_1a61b6ba1250ac4b11f5580dd1b8734248" kind="typedef"><name>sptr</name></member>
     <member refid="classgr_1_1ieee80211ah_1_1ah__chunks__to__symbols_1a18f3cbf2450f5cdd77fc15519bb0006f" kind="function"><name>make</name></member>
   </compound>
+  <compound refid="classgr_1_1ieee80211ah_1_1ah__ofdm__decode__mac" kind="class"><name>gr::ieee80211ah::ah_ofdm_decode_mac</name>
+    <member refid="classgr_1_1ieee80211ah_1_1ah__ofdm__decode__mac_1a8a40bf30341b456217452d65797d83d5" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1ieee80211ah_1_1ah__ofdm__decode__mac_1a8931adfe53470ea0c6f2caf602e0022b" kind="function"><name>make</name></member>
+  </compound>
   <compound refid="classgr_1_1ieee80211ah_1_1ah__ofdm__mapper" kind="class"><name>gr::ieee80211ah::ah_ofdm_mapper</name>
     <member refid="classgr_1_1ieee80211ah_1_1ah__ofdm__mapper_1a0121694954ce0ac833afbe4719301b67" kind="typedef"><name>sptr</name></member>
     <member refid="classgr_1_1ieee80211ah_1_1ah__ofdm__mapper_1a58ed7fc16bb587ad78d2cd4c350da3cf" kind="function"><name>make</name></member>
-    <member refid="classgr_1_1ieee80211ah_1_1ah__ofdm__mapper_1a332e4aea054e35c1643ae4fd5aaec88e" kind="function"><name>set_encoding_ah</name></member>
+    <member refid="classgr_1_1ieee80211ah_1_1ah__ofdm__mapper_1ae610b923470bda2eb7e7519ea7e2cae7" kind="function"><name>set_encoding</name></member>
   </compound>
   <compound refid="namespacegr" kind="namespace"><name>gr</name>
   </compound>
@@ -17,9 +21,12 @@
   </compound>
   <compound refid="ah__chunks__to__symbols_8h" kind="file"><name>ah_chunks_to_symbols.h</name>
   </compound>
+  <compound refid="ah__ofdm__decode__mac_8h" kind="file"><name>ah_ofdm_decode_mac.h</name>
+  </compound>
   <compound refid="ah__ofdm__mapper_8h" kind="file"><name>ah_ofdm_mapper.h</name>
     <member refid="ah__ofdm__mapper_8h_1afb0564821f132bfe74508af8349a0faa" kind="enum"><name>Encoding</name></member>
     <member refid="ah__ofdm__mapper_8h_1afb0564821f132bfe74508af8349a0faaa4828dd17aae56191496c1c51b91c7e29" kind="enumvalue"><name>BPSK_1_2</name></member>
+    <member refid="ah__ofdm__mapper_8h_1afb0564821f132bfe74508af8349a0faaa0d75f101e675d08545565bfcffa54ca8" kind="enumvalue"><name>BPSK_3_4</name></member>
     <member refid="ah__ofdm__mapper_8h_1afb0564821f132bfe74508af8349a0faaab42f822702f45e75518f935b1f3eac0b" kind="enumvalue"><name>QPSK_1_2</name></member>
     <member refid="ah__ofdm__mapper_8h_1afb0564821f132bfe74508af8349a0faaa0467d010137e0ab28ed8c89f934ef0f7" kind="enumvalue"><name>QPSK_3_4</name></member>
     <member refid="ah__ofdm__mapper_8h_1afb0564821f132bfe74508af8349a0faaabcf9a4d089044cc1af297abe882978c8" kind="enumvalue"><name>QAM16_1_2</name></member>

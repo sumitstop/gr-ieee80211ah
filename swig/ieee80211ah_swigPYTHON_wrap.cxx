@@ -8158,7 +8158,7 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_ah_ofdm_mapper_set_encoding_ah(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
+SWIGINTERN PyObject *_wrap_ah_ofdm_mapper_set_encoding(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
   PyObject *resultobj = 0;
   gr::ieee80211ah::ah_ofdm_mapper *arg1 = (gr::ieee80211ah::ah_ofdm_mapper *) 0 ;
   Encoding arg2 ;
@@ -8169,23 +8169,23 @@ SWIGINTERN PyObject *_wrap_ah_ofdm_mapper_set_encoding_ah(PyObject *SWIGUNUSEDPA
   PyObject * obj0 = 0 ;
   PyObject * obj1 = 0 ;
   char *  kwnames[] = {
-    (char *) "self",(char *) "encoding", NULL 
+    (char *) "self",(char *) "mcs", NULL 
   };
   
-  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OO:ah_ofdm_mapper_set_encoding_ah",kwnames,&obj0,&obj1)) SWIG_fail;
+  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OO:ah_ofdm_mapper_set_encoding",kwnames,&obj0,&obj1)) SWIG_fail;
   res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_gr__ieee80211ah__ah_ofdm_mapper, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "ah_ofdm_mapper_set_encoding_ah" "', argument " "1"" of type '" "gr::ieee80211ah::ah_ofdm_mapper *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "ah_ofdm_mapper_set_encoding" "', argument " "1"" of type '" "gr::ieee80211ah::ah_ofdm_mapper *""'"); 
   }
   arg1 = reinterpret_cast< gr::ieee80211ah::ah_ofdm_mapper * >(argp1);
   ecode2 = SWIG_AsVal_int(obj1, &val2);
   if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "ah_ofdm_mapper_set_encoding_ah" "', argument " "2"" of type '" "Encoding""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "ah_ofdm_mapper_set_encoding" "', argument " "2"" of type '" "Encoding""'");
   } 
   arg2 = static_cast< Encoding >(val2);
   {
     try {
-      (arg1)->set_encoding_ah(arg2);
+      (arg1)->set_encoding(arg2);
     }
     catch(std::exception &e) {
       SWIG_exception(SWIG_RuntimeError, e.what());
@@ -8450,7 +8450,7 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_ah_ofdm_mapper_sptr_set_encoding_ah(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
+SWIGINTERN PyObject *_wrap_ah_ofdm_mapper_sptr_set_encoding(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
   PyObject *resultobj = 0;
   boost::shared_ptr< gr::ieee80211ah::ah_ofdm_mapper > *arg1 = (boost::shared_ptr< gr::ieee80211ah::ah_ofdm_mapper > *) 0 ;
   Encoding arg2 ;
@@ -8461,23 +8461,23 @@ SWIGINTERN PyObject *_wrap_ah_ofdm_mapper_sptr_set_encoding_ah(PyObject *SWIGUNU
   PyObject * obj0 = 0 ;
   PyObject * obj1 = 0 ;
   char *  kwnames[] = {
-    (char *) "self",(char *) "encoding", NULL 
+    (char *) "self",(char *) "mcs", NULL 
   };
   
-  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OO:ah_ofdm_mapper_sptr_set_encoding_ah",kwnames,&obj0,&obj1)) SWIG_fail;
+  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OO:ah_ofdm_mapper_sptr_set_encoding",kwnames,&obj0,&obj1)) SWIG_fail;
   res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__ieee80211ah__ah_ofdm_mapper_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "ah_ofdm_mapper_sptr_set_encoding_ah" "', argument " "1"" of type '" "boost::shared_ptr< gr::ieee80211ah::ah_ofdm_mapper > *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "ah_ofdm_mapper_sptr_set_encoding" "', argument " "1"" of type '" "boost::shared_ptr< gr::ieee80211ah::ah_ofdm_mapper > *""'"); 
   }
   arg1 = reinterpret_cast< boost::shared_ptr< gr::ieee80211ah::ah_ofdm_mapper > * >(argp1);
   ecode2 = SWIG_AsVal_int(obj1, &val2);
   if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "ah_ofdm_mapper_sptr_set_encoding_ah" "', argument " "2"" of type '" "Encoding""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "ah_ofdm_mapper_sptr_set_encoding" "', argument " "2"" of type '" "Encoding""'");
   } 
   arg2 = static_cast< Encoding >(val2);
   {
     try {
-      (*arg1)->set_encoding_ah(arg2);
+      (*arg1)->set_encoding(arg2);
     }
     catch(std::exception &e) {
       SWIG_exception(SWIG_RuntimeError, e.what());
@@ -14665,10 +14665,10 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		"Params: (mcs, debug)\n"
 		""},
-	 { (char *)"ah_ofdm_mapper_set_encoding_ah", (PyCFunction) _wrap_ah_ofdm_mapper_set_encoding_ah, METH_VARARGS | METH_KEYWORDS, (char *)"\n"
-		"ah_ofdm_mapper_set_encoding_ah(ah_ofdm_mapper self, Encoding encoding)\n"
+	 { (char *)"ah_ofdm_mapper_set_encoding", (PyCFunction) _wrap_ah_ofdm_mapper_set_encoding, METH_VARARGS | METH_KEYWORDS, (char *)"\n"
+		"ah_ofdm_mapper_set_encoding(ah_ofdm_mapper self, Encoding mcs)\n"
 		"\n"
-		"Params: (encoding)\n"
+		"Params: (mcs)\n"
 		""},
 	 { (char *)"delete_ah_ofdm_mapper", _wrap_delete_ah_ofdm_mapper, METH_VARARGS, (char *)"delete_ah_ofdm_mapper(ah_ofdm_mapper self)"},
 	 { (char *)"ah_ofdm_mapper_swigregister", ah_ofdm_mapper_swigregister, METH_VARARGS, NULL},
@@ -14683,10 +14683,10 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		"Params: (mcs, debug)\n"
 		""},
-	 { (char *)"ah_ofdm_mapper_sptr_set_encoding_ah", (PyCFunction) _wrap_ah_ofdm_mapper_sptr_set_encoding_ah, METH_VARARGS | METH_KEYWORDS, (char *)"\n"
-		"ah_ofdm_mapper_sptr_set_encoding_ah(ah_ofdm_mapper_sptr self, Encoding encoding)\n"
+	 { (char *)"ah_ofdm_mapper_sptr_set_encoding", (PyCFunction) _wrap_ah_ofdm_mapper_sptr_set_encoding, METH_VARARGS | METH_KEYWORDS, (char *)"\n"
+		"ah_ofdm_mapper_sptr_set_encoding(ah_ofdm_mapper_sptr self, Encoding mcs)\n"
 		"\n"
-		"Params: (encoding)\n"
+		"Params: (mcs)\n"
 		""},
 	 { (char *)"ah_ofdm_mapper_sptr_history", _wrap_ah_ofdm_mapper_sptr_history, METH_VARARGS, (char *)"ah_ofdm_mapper_sptr_history(ah_ofdm_mapper_sptr self) -> unsigned int"},
 	 { (char *)"ah_ofdm_mapper_sptr_declare_sample_delay", _wrap_ah_ofdm_mapper_sptr_declare_sample_delay, METH_VARARGS, (char *)"\n"
@@ -14771,7 +14771,15 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"ah_ofdm_mapper_sptr_message_ports_out", _wrap_ah_ofdm_mapper_sptr_message_ports_out, METH_VARARGS, (char *)"ah_ofdm_mapper_sptr_message_ports_out(ah_ofdm_mapper_sptr self) -> swig_int_ptr"},
 	 { (char *)"ah_ofdm_mapper_sptr_message_subscribers", (PyCFunction) _wrap_ah_ofdm_mapper_sptr_message_subscribers, METH_VARARGS | METH_KEYWORDS, (char *)"ah_ofdm_mapper_sptr_message_subscribers(ah_ofdm_mapper_sptr self, swig_int_ptr which_port) -> swig_int_ptr"},
 	 { (char *)"ah_ofdm_mapper_sptr_swigregister", ah_ofdm_mapper_sptr_swigregister, METH_VARARGS, NULL},
-	 { (char *)"ah_ofdm_decode_mac_make", (PyCFunction) _wrap_ah_ofdm_decode_mac_make, METH_VARARGS | METH_KEYWORDS, (char *)"ah_ofdm_decode_mac_make(bool log=False, bool debug=False) -> ah_ofdm_decode_mac_sptr"},
+	 { (char *)"ah_ofdm_decode_mac_make", (PyCFunction) _wrap_ah_ofdm_decode_mac_make, METH_VARARGS | METH_KEYWORDS, (char *)"\n"
+		"ah_ofdm_decode_mac_make(bool log=False, bool debug=False) -> ah_ofdm_decode_mac_sptr\n"
+		"\n"
+		"Return a shared_ptr to a new instance of ieee80211ah::ah_ofdm_decode_mac.\n"
+		"\n"
+		"To avoid accidental use of raw pointers, ieee80211ah::ah_ofdm_decode_mac's constructor is in a private implementation class. ieee80211ah::ah_ofdm_decode_mac::make is the public interface for creating new instances.\n"
+		"\n"
+		"Params: (log, debug)\n"
+		""},
 	 { (char *)"delete_ah_ofdm_decode_mac", _wrap_delete_ah_ofdm_decode_mac, METH_VARARGS, (char *)"delete_ah_ofdm_decode_mac(ah_ofdm_decode_mac self)"},
 	 { (char *)"ah_ofdm_decode_mac_swigregister", ah_ofdm_decode_mac_swigregister, METH_VARARGS, NULL},
 	 { (char *)"new_ah_ofdm_decode_mac_sptr", _wrap_new_ah_ofdm_decode_mac_sptr, METH_VARARGS, (char *)"\n"
@@ -14780,7 +14788,15 @@ static PyMethodDef SwigMethods[] = {
 		""},
 	 { (char *)"ah_ofdm_decode_mac_sptr___deref__", _wrap_ah_ofdm_decode_mac_sptr___deref__, METH_VARARGS, (char *)"ah_ofdm_decode_mac_sptr___deref__(ah_ofdm_decode_mac_sptr self) -> ah_ofdm_decode_mac"},
 	 { (char *)"delete_ah_ofdm_decode_mac_sptr", _wrap_delete_ah_ofdm_decode_mac_sptr, METH_VARARGS, (char *)"delete_ah_ofdm_decode_mac_sptr(ah_ofdm_decode_mac_sptr self)"},
-	 { (char *)"ah_ofdm_decode_mac_sptr_make", (PyCFunction) _wrap_ah_ofdm_decode_mac_sptr_make, METH_VARARGS | METH_KEYWORDS, (char *)"ah_ofdm_decode_mac_sptr_make(ah_ofdm_decode_mac_sptr self, bool log=False, bool debug=False) -> ah_ofdm_decode_mac_sptr"},
+	 { (char *)"ah_ofdm_decode_mac_sptr_make", (PyCFunction) _wrap_ah_ofdm_decode_mac_sptr_make, METH_VARARGS | METH_KEYWORDS, (char *)"\n"
+		"ah_ofdm_decode_mac_sptr_make(ah_ofdm_decode_mac_sptr self, bool log=False, bool debug=False) -> ah_ofdm_decode_mac_sptr\n"
+		"\n"
+		"Return a shared_ptr to a new instance of ieee80211ah::ah_ofdm_decode_mac.\n"
+		"\n"
+		"To avoid accidental use of raw pointers, ieee80211ah::ah_ofdm_decode_mac's constructor is in a private implementation class. ieee80211ah::ah_ofdm_decode_mac::make is the public interface for creating new instances.\n"
+		"\n"
+		"Params: (log, debug)\n"
+		""},
 	 { (char *)"ah_ofdm_decode_mac_sptr_history", _wrap_ah_ofdm_decode_mac_sptr_history, METH_VARARGS, (char *)"ah_ofdm_decode_mac_sptr_history(ah_ofdm_decode_mac_sptr self) -> unsigned int"},
 	 { (char *)"ah_ofdm_decode_mac_sptr_declare_sample_delay", _wrap_ah_ofdm_decode_mac_sptr_declare_sample_delay, METH_VARARGS, (char *)"\n"
 		"declare_sample_delay(int which, int delay)\n"
@@ -15805,6 +15821,7 @@ SWIG_init(void) {
   SWIG_InstallConstants(d,swig_const_table);
   
   SWIG_Python_SetConstant(d, "BPSK_1_2",SWIG_From_int(static_cast< int >(BPSK_1_2)));
+  SWIG_Python_SetConstant(d, "BPSK_3_4",SWIG_From_int(static_cast< int >(BPSK_3_4)));
   SWIG_Python_SetConstant(d, "QPSK_1_2",SWIG_From_int(static_cast< int >(QPSK_1_2)));
   SWIG_Python_SetConstant(d, "QPSK_3_4",SWIG_From_int(static_cast< int >(QPSK_3_4)));
   SWIG_Python_SetConstant(d, "QAM16_1_2",SWIG_From_int(static_cast< int >(QAM16_1_2)));

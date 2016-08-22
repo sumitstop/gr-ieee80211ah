@@ -49,7 +49,7 @@ namespace gr {
 			  d_debug(debug),
 			  d_ofdm(e){
     message_port_register_in(pmt::mp("in"));
-    set_encoding_ah(e);
+    set_encoding(e);
     }
 
     /*
@@ -194,7 +194,7 @@ namespace gr {
     }
 
     void
-	ah_ofdm_mapper_impl::set_encoding_ah(Encoding encoding) {
+	ah_ofdm_mapper_impl::set_encoding(Encoding encoding) {
 
     	std::cout << "OFDM MAPPER: encoding: " << encoding << std::endl;
     	gr::thread::scoped_lock lock(d_mutex);

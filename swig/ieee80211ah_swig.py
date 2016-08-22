@@ -402,6 +402,7 @@ ah_chunks_to_symbols_sptr.__repr__ = lambda self: "<gr_block %s (%d)>" % (self.n
 ah_chunks_to_symbols = ah_chunks_to_symbols.make;
 
 BPSK_1_2 = _ieee80211ah_swig.BPSK_1_2
+BPSK_3_4 = _ieee80211ah_swig.BPSK_3_4
 QPSK_1_2 = _ieee80211ah_swig.QPSK_1_2
 QPSK_3_4 = _ieee80211ah_swig.QPSK_3_4
 QAM16_1_2 = _ieee80211ah_swig.QAM16_1_2
@@ -424,13 +425,13 @@ class ah_ofdm_mapper(object):
         return _ieee80211ah_swig.ah_ofdm_mapper_make(*args, **kwargs)
 
     make = staticmethod(make)
-    def set_encoding_ah(self, *args, **kwargs):
+    def set_encoding(self, *args, **kwargs):
         """
-        set_encoding_ah(ah_ofdm_mapper self, Encoding encoding)
+        set_encoding(ah_ofdm_mapper self, Encoding mcs)
 
-        Params: (encoding)
+        Params: (mcs)
         """
-        return _ieee80211ah_swig.ah_ofdm_mapper_set_encoding_ah(self, *args, **kwargs)
+        return _ieee80211ah_swig.ah_ofdm_mapper_set_encoding(self, *args, **kwargs)
 
     __swig_destroy__ = _ieee80211ah_swig.delete_ah_ofdm_mapper
     __del__ = lambda self : None;
@@ -471,13 +472,13 @@ class ah_ofdm_mapper_sptr(object):
         """
         return _ieee80211ah_swig.ah_ofdm_mapper_sptr_make(self, *args, **kwargs)
 
-    def set_encoding_ah(self, *args, **kwargs):
+    def set_encoding(self, *args, **kwargs):
         """
-        set_encoding_ah(ah_ofdm_mapper_sptr self, Encoding encoding)
+        set_encoding(ah_ofdm_mapper_sptr self, Encoding mcs)
 
-        Params: (encoding)
+        Params: (mcs)
         """
-        return _ieee80211ah_swig.ah_ofdm_mapper_sptr_set_encoding_ah(self, *args, **kwargs)
+        return _ieee80211ah_swig.ah_ofdm_mapper_sptr_set_encoding(self, *args, **kwargs)
 
     def history(self):
         """history(ah_ofdm_mapper_sptr self) -> unsigned int"""
@@ -733,12 +734,20 @@ ah_ofdm_mapper_sptr.__repr__ = lambda self: "<gr_block %s (%d)>" % (self.name(),
 ah_ofdm_mapper = ah_ofdm_mapper.make;
 
 class ah_ofdm_decode_mac(object):
-    """Proxy of C++ gr::ieee80211ah::ah_ofdm_decode_mac class"""
+    """<+description of block+>"""
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
     def make(log=False, debug=False):
-        """make(bool log=False, bool debug=False) -> ah_ofdm_decode_mac_sptr"""
+        """
+        make(bool log=False, bool debug=False) -> ah_ofdm_decode_mac_sptr
+
+        Return a shared_ptr to a new instance of ieee80211ah::ah_ofdm_decode_mac.
+
+        To avoid accidental use of raw pointers, ieee80211ah::ah_ofdm_decode_mac's constructor is in a private implementation class. ieee80211ah::ah_ofdm_decode_mac::make is the public interface for creating new instances.
+
+        Params: (log, debug)
+        """
         return _ieee80211ah_swig.ah_ofdm_decode_mac_make(log, debug)
 
     make = staticmethod(make)
@@ -748,7 +757,15 @@ ah_ofdm_decode_mac_swigregister = _ieee80211ah_swig.ah_ofdm_decode_mac_swigregis
 ah_ofdm_decode_mac_swigregister(ah_ofdm_decode_mac)
 
 def ah_ofdm_decode_mac_make(log=False, debug=False):
-  """ah_ofdm_decode_mac_make(bool log=False, bool debug=False) -> ah_ofdm_decode_mac_sptr"""
+  """
+    ah_ofdm_decode_mac_make(bool log=False, bool debug=False) -> ah_ofdm_decode_mac_sptr
+
+    Return a shared_ptr to a new instance of ieee80211ah::ah_ofdm_decode_mac.
+
+    To avoid accidental use of raw pointers, ieee80211ah::ah_ofdm_decode_mac's constructor is in a private implementation class. ieee80211ah::ah_ofdm_decode_mac::make is the public interface for creating new instances.
+
+    Params: (log, debug)
+    """
   return _ieee80211ah_swig.ah_ofdm_decode_mac_make(log, debug)
 
 class ah_ofdm_decode_mac_sptr(object):
@@ -770,7 +787,15 @@ class ah_ofdm_decode_mac_sptr(object):
     __swig_destroy__ = _ieee80211ah_swig.delete_ah_ofdm_decode_mac_sptr
     __del__ = lambda self : None;
     def make(self, log=False, debug=False):
-        """make(ah_ofdm_decode_mac_sptr self, bool log=False, bool debug=False) -> ah_ofdm_decode_mac_sptr"""
+        """
+        make(ah_ofdm_decode_mac_sptr self, bool log=False, bool debug=False) -> ah_ofdm_decode_mac_sptr
+
+        Return a shared_ptr to a new instance of ieee80211ah::ah_ofdm_decode_mac.
+
+        To avoid accidental use of raw pointers, ieee80211ah::ah_ofdm_decode_mac's constructor is in a private implementation class. ieee80211ah::ah_ofdm_decode_mac::make is the public interface for creating new instances.
+
+        Params: (log, debug)
+        """
         return _ieee80211ah_swig.ah_ofdm_decode_mac_sptr_make(self, log, debug)
 
     def history(self):

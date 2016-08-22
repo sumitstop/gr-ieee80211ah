@@ -5,7 +5,7 @@
   <category>[IEEE802.11 AH]</category>
   <import>import ieee80211ah</import>
   <make>ieee80211ah.ah_ofdm_mapper($encoding, $debug)</make>
-  <callback>set_encoding_ah($encoding)</callback>
+  <callback>set_encoding($encoding)</callback>
   <param>
 		<name>Encoding AH</name>
 		<key>encoding</key>

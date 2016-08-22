@@ -28,14 +28,15 @@
 
 enum Encoding {
 	  BPSK_1_2  = 0,
-	  QPSK_1_2  = 1,
-	  QPSK_3_4  = 2,
-	  QAM16_1_2 = 3,
-	  QAM16_3_4 = 4,
-	  QAM64_2_3 = 5,
-	  QAM64_3_4 = 6,
-	  QAM64_5_6 = 7,
-	  QAM256_3_4 = 8,
+	  BPSK_3_4  = 1,
+	  QPSK_1_2  = 2,
+	  QPSK_3_4  = 3,
+	  QAM16_1_2 = 4,
+	  QAM16_3_4 = 5,
+	  QAM64_2_3 = 6,
+	  QAM64_3_4 = 7,
+	  QAM64_5_6 = 8,
+	  QAM256_3_4 = 9,
  };
 
 namespace gr {
@@ -52,7 +53,7 @@ namespace gr {
       typedef boost::shared_ptr<ah_ofdm_mapper> sptr;
 
       static sptr make(Encoding mcs, bool debug = false);
-      virtual void set_encoding_ah(Encoding encoding) = 0;
+      virtual void set_encoding(Encoding mcs) = 0;
     };
 
   } // namespace ieee80211ah

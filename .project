@@ -6,39 +6,24 @@
 	</projects>
 	<buildSpec>
 		<buildCommand>
+			<name>org.python.pydev.PyDevBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
 			<name>org.eclipse.cdt.make.core.makeBuilder</name>
 			<triggers>clean,full,incremental,</triggers>
 			<arguments>
 				<dictionary>
-					<key>org.eclipse.cdt.make.core.cleanBuildTarget</key>
-					<value>clean</value>
-				</dictionary>
-				<dictionary>
-					<key>org.eclipse.cdt.make.core.enableCleanBuild</key>
-					<value>true</value>
+					<key>org.eclipse.cdt.core.errorOutputParser</key>
+					<value>org.eclipse.cdt.core.MakeErrorParser;org.eclipse.cdt.core.GCCErrorParser;org.eclipse.cdt.core.GASErrorParser;org.eclipse.cdt.core.GLDErrorParser;</value>
 				</dictionary>
 				<dictionary>
 					<key>org.eclipse.cdt.make.core.append_environment</key>
 					<value>true</value>
 				</dictionary>
 				<dictionary>
-					<key>org.eclipse.cdt.make.core.stopOnError</key>
-					<value>true</value>
-				</dictionary>
-				<dictionary>
-					<key>org.eclipse.cdt.make.core.enabledIncrementalBuild</key>
-					<value>true</value>
-				</dictionary>
-				<dictionary>
-					<key>org.eclipse.cdt.make.core.build.command</key>
-					<value>/usr/bin/make</value>
-				</dictionary>
-				<dictionary>
-					<key>org.eclipse.cdt.make.core.contents</key>
-					<value>org.eclipse.cdt.make.core.activeConfigSettings</value>
-				</dictionary>
-				<dictionary>
-					<key>org.eclipse.cdt.make.core.build.target.inc</key>
+					<key>org.eclipse.cdt.make.core.autoBuildTarget</key>
 					<value>all</value>
 				</dictionary>
 				<dictionary>
@@ -46,35 +31,23 @@
 					<value>-j8</value>
 				</dictionary>
 				<dictionary>
-					<key>org.eclipse.cdt.make.core.buildLocation</key>
+					<key>org.eclipse.cdt.make.core.build.command</key>
+					<value>/usr/bin/make</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.build.location</key>
 					<value>/usr/local/src/gr-ieee80211ah</value>
-				</dictionary>
-				<dictionary>
-					<key>org.eclipse.cdt.make.core.useDefaultBuildCmd</key>
-					<value>false</value>
-				</dictionary>
-				<dictionary>
-					<key>org.eclipse.cdt.make.core.environment</key>
-					<value>VERBOSE=1|CMAKE_NO_VERBOSE=1|</value>
-				</dictionary>
-				<dictionary>
-					<key>org.eclipse.cdt.make.core.enableFullBuild</key>
-					<value>true</value>
 				</dictionary>
 				<dictionary>
 					<key>org.eclipse.cdt.make.core.build.target.auto</key>
 					<value>all</value>
 				</dictionary>
 				<dictionary>
-					<key>org.eclipse.cdt.make.core.enableAutoBuild</key>
-					<value>false</value>
-				</dictionary>
-				<dictionary>
 					<key>org.eclipse.cdt.make.core.build.target.clean</key>
 					<value>clean</value>
 				</dictionary>
 				<dictionary>
-					<key>org.eclipse.cdt.make.core.fullBuildTarget</key>
+					<key>org.eclipse.cdt.make.core.build.target.inc</key>
 					<value>all</value>
 				</dictionary>
 				<dictionary>
@@ -82,16 +55,48 @@
 					<value></value>
 				</dictionary>
 				<dictionary>
-					<key>org.eclipse.cdt.make.core.build.location</key>
+					<key>org.eclipse.cdt.make.core.buildLocation</key>
 					<value>/usr/local/src/gr-ieee80211ah</value>
 				</dictionary>
 				<dictionary>
-					<key>org.eclipse.cdt.make.core.autoBuildTarget</key>
+					<key>org.eclipse.cdt.make.core.cleanBuildTarget</key>
+					<value>clean</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.contents</key>
+					<value>org.eclipse.cdt.make.core.activeConfigSettings</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.enableAutoBuild</key>
+					<value>false</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.enableCleanBuild</key>
+					<value>true</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.enableFullBuild</key>
+					<value>true</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.enabledIncrementalBuild</key>
+					<value>true</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.environment</key>
+					<value>VERBOSE=1|CMAKE_NO_VERBOSE=1|</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.fullBuildTarget</key>
 					<value>all</value>
 				</dictionary>
 				<dictionary>
-					<key>org.eclipse.cdt.core.errorOutputParser</key>
-					<value>org.eclipse.cdt.core.MakeErrorParser;org.eclipse.cdt.core.GCCErrorParser;org.eclipse.cdt.core.GASErrorParser;org.eclipse.cdt.core.GLDErrorParser;</value>
+					<key>org.eclipse.cdt.make.core.stopOnError</key>
+					<value>true</value>
+				</dictionary>
+				<dictionary>
+					<key>org.eclipse.cdt.make.core.useDefaultBuildCmd</key>
+					<value>false</value>
 				</dictionary>
 			</arguments>
 		</buildCommand>
@@ -106,6 +111,7 @@
 		<nature>org.eclipse.cdt.make.core.makeNature</nature>
 		<nature>org.eclipse.cdt.make.core.ScannerConfigNature</nature>
 		<nature>org.eclipse.cdt.core.cnature</nature>
+		<nature>org.python.pydev.pythonNature</nature>
 	</natures>
 	<linkedResources>
 		<link>
@@ -119,7 +125,22 @@
 			<locationURI>virtual:/virtual</locationURI>
 		</link>
 		<link>
-			<name>[Targets]/[lib] gnuradio-ieee80211ah</name>
+			<name>[Targets]/[exe] _ieee80211ah_swig_doc_tag/</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] _ieee80211ah_swig_swig_tag/</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] ieee80211ah_swig_swig_2d0df/</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] _ieee80211ah_swig/</name>
 			<type>2</type>
 			<locationURI>virtual:/virtual</locationURI>
 		</link>
@@ -129,14 +150,194 @@
 			<locationURI>virtual:/virtual</locationURI>
 		</link>
 		<link>
+			<name>[Targets]/[exe] _ieee80211ah_swig_doc_tag/CMake Rules</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] _ieee80211ah_swig_doc_tag/Header Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] _ieee80211ah_swig_doc_tag/Object Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] _ieee80211ah_swig_doc_tag/Resources</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] _ieee80211ah_swig_doc_tag/Source Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] _ieee80211ah_swig_swig_tag/CMake Rules</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] _ieee80211ah_swig_swig_tag/Header Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] _ieee80211ah_swig_swig_tag/Object Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] _ieee80211ah_swig_swig_tag/Resources</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] _ieee80211ah_swig_swig_tag/Source Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] ieee80211ah_swig_swig_2d0df/CMake Rules</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] ieee80211ah_swig_swig_2d0df/Header Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] ieee80211ah_swig_swig_2d0df/Object Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] ieee80211ah_swig_swig_2d0df/Resources</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] ieee80211ah_swig_swig_2d0df/Source Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] _ieee80211ah_swig/CMake Rules</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] _ieee80211ah_swig/Header Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] _ieee80211ah_swig/Object Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] _ieee80211ah_swig/Resources</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] _ieee80211ah_swig/Source Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] _ieee80211ah_swig/ieee80211ah_swig.py</name>
+			<type>1</type>
+			<location>/usr/local/src/gr-ieee80211ah/swig/ieee80211ah_swig.py</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] gnuradio-ieee80211ah/CMake Rules</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] gnuradio-ieee80211ah/Header Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] gnuradio-ieee80211ah/Object Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[lib] gnuradio-ieee80211ah/Resources</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
 			<name>[Targets]/[lib] gnuradio-ieee80211ah/Source Files</name>
 			<type>2</type>
 			<locationURI>virtual:/virtual</locationURI>
 		</link>
 		<link>
+			<name>[Targets]/[exe] _ieee80211ah_swig_doc_tag/Source Files/_ieee80211ah_swig_doc_tag.cpp</name>
+			<type>1</type>
+			<location>/usr/local/src/gr-ieee80211ah/swig/_ieee80211ah_swig_doc_tag.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] _ieee80211ah_swig_swig_tag/Source Files/_ieee80211ah_swig_swig_tag.cpp</name>
+			<type>1</type>
+			<location>/usr/local/src/gr-ieee80211ah/swig/_ieee80211ah_swig_swig_tag.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] ieee80211ah_swig_swig_2d0df/CMake Rules/ieee80211ah_swig.tag.rule</name>
+			<type>1</type>
+			<location>/usr/local/src/gr-ieee80211ah/swig/ieee80211ah_swig.tag.rule</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] ieee80211ah_swig_swig_2d0df/CMake Rules/ieee80211ah_swig_doc.i.rule</name>
+			<type>1</type>
+			<location>/usr/local/src/gr-ieee80211ah/swig/ieee80211ah_swig_doc.i.rule</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] ieee80211ah_swig_swig_2d0df/CMake Rules/ieee80211ah_swig_swig_2d0df.cpp.rule</name>
+			<type>1</type>
+			<location>/usr/local/src/gr-ieee80211ah/swig/ieee80211ah_swig_swig_2d0df.cpp.rule</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] ieee80211ah_swig_swig_2d0df/CMake Rules/index.xml.rule</name>
+			<type>1</type>
+			<location>/usr/local/src/gr-ieee80211ah/swig/ieee80211ah_swig_doc_swig_docs/xml/index.xml.rule</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] ieee80211ah_swig_swig_2d0df/Source Files/ieee80211ah_swig_swig_2d0df.cpp</name>
+			<type>1</type>
+			<location>/usr/local/src/gr-ieee80211ah/swig/ieee80211ah_swig_swig_2d0df.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] _ieee80211ah_swig/CMake Rules/ieee80211ah_swig.py.rule</name>
+			<type>1</type>
+			<location>/usr/local/src/gr-ieee80211ah/swig/ieee80211ah_swig.py.rule</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] _ieee80211ah_swig/CMake Rules/ieee80211ah_swigPYTHON_wrap.cxx.rule</name>
+			<type>1</type>
+			<location>/usr/local/src/gr-ieee80211ah/swig/ieee80211ah_swigPYTHON_wrap.cxx.rule</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] _ieee80211ah_swig/Source Files/ieee80211ah_swigPYTHON_wrap.cxx</name>
+			<type>1</type>
+			<location>/usr/local/src/gr-ieee80211ah/swig/ieee80211ah_swigPYTHON_wrap.cxx</location>
+		</link>
+		<link>
 			<name>[Targets]/[lib] gnuradio-ieee80211ah/Source Files/ah_chunks_to_symbols_impl.cc</name>
 			<type>1</type>
 			<location>/usr/local/src/gr-ieee80211ah/lib/ah_chunks_to_symbols_impl.cc</location>
+		</link>
+		<link>
+			<name>[Targets]/[lib] gnuradio-ieee80211ah/Source Files/ah_ofdm_decode_mac_impl.cc</name>
+			<type>1</type>
+			<location>/usr/local/src/gr-ieee80211ah/lib/ah_ofdm_decode_mac_impl.cc</location>
 		</link>
 		<link>
 			<name>[Targets]/[lib] gnuradio-ieee80211ah/Source Files/ah_ofdm_mapper_impl.cc</name>
@@ -147,226 +348,6 @@
 			<name>[Targets]/[lib] gnuradio-ieee80211ah/Source Files/utils_ah.cc</name>
 			<type>1</type>
 			<location>/usr/local/src/gr-ieee80211ah/lib/utils_ah.cc</location>
-		</link>
-		<link>
-			<name>[Targets]/[lib] gnuradio-ieee80211ah/Source Files/ah_ofdm_decode_mac_impl.cc</name>
-			<type>1</type>
-			<location>/usr/local/src/gr-ieee80211ah/lib/ah_ofdm_decode_mac_impl.cc</location>
-		</link>
-		<link>
-			<name>[Targets]/[lib] gnuradio-ieee80211ah/Header Files</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
-		</link>
-		<link>
-			<name>[Targets]/[lib] gnuradio-ieee80211ah/CMake Rules</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
-		</link>
-		<link>
-			<name>[Targets]/[lib] gnuradio-ieee80211ah/Resources</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
-		</link>
-		<link>
-			<name>[Targets]/[lib] gnuradio-ieee80211ah/Object Files</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
-		</link>
-		<link>
-			<name>[Targets]/[lib] _ieee80211ah_swig</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
-		</link>
-		<link>
-			<name>[Targets]/[lib] _ieee80211ah_swig/</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
-		</link>
-		<link>
-			<name>[Targets]/[lib] _ieee80211ah_swig//ieee80211ah_swig.py</name>
-			<type>1</type>
-			<location>/usr/local/src/gr-ieee80211ah/swig/ieee80211ah_swig.py</location>
-		</link>
-		<link>
-			<name>[Targets]/[lib] _ieee80211ah_swig/Source Files</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
-		</link>
-		<link>
-			<name>[Targets]/[lib] _ieee80211ah_swig/Source Files/ieee80211ah_swigPYTHON_wrap.cxx</name>
-			<type>1</type>
-			<location>/usr/local/src/gr-ieee80211ah/swig/ieee80211ah_swigPYTHON_wrap.cxx</location>
-		</link>
-		<link>
-			<name>[Targets]/[lib] _ieee80211ah_swig/Header Files</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
-		</link>
-		<link>
-			<name>[Targets]/[lib] _ieee80211ah_swig/CMake Rules</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
-		</link>
-		<link>
-			<name>[Targets]/[lib] _ieee80211ah_swig/CMake Rules/ieee80211ah_swigPYTHON_wrap.cxx.rule</name>
-			<type>1</type>
-			<location>/usr/local/src/gr-ieee80211ah/swig/ieee80211ah_swigPYTHON_wrap.cxx.rule</location>
-		</link>
-		<link>
-			<name>[Targets]/[lib] _ieee80211ah_swig/CMake Rules/ieee80211ah_swig.py.rule</name>
-			<type>1</type>
-			<location>/usr/local/src/gr-ieee80211ah/swig/ieee80211ah_swig.py.rule</location>
-		</link>
-		<link>
-			<name>[Targets]/[lib] _ieee80211ah_swig/Resources</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
-		</link>
-		<link>
-			<name>[Targets]/[lib] _ieee80211ah_swig/Object Files</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
-		</link>
-		<link>
-			<name>[Targets]/[exe] _ieee80211ah_swig_doc_tag</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
-		</link>
-		<link>
-			<name>[Targets]/[exe] _ieee80211ah_swig_doc_tag/</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
-		</link>
-		<link>
-			<name>[Targets]/[exe] _ieee80211ah_swig_doc_tag/Source Files</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
-		</link>
-		<link>
-			<name>[Targets]/[exe] _ieee80211ah_swig_doc_tag/Source Files/_ieee80211ah_swig_doc_tag.cpp</name>
-			<type>1</type>
-			<location>/usr/local/src/gr-ieee80211ah/swig/_ieee80211ah_swig_doc_tag.cpp</location>
-		</link>
-		<link>
-			<name>[Targets]/[exe] _ieee80211ah_swig_doc_tag/Header Files</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
-		</link>
-		<link>
-			<name>[Targets]/[exe] _ieee80211ah_swig_doc_tag/CMake Rules</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
-		</link>
-		<link>
-			<name>[Targets]/[exe] _ieee80211ah_swig_doc_tag/Resources</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
-		</link>
-		<link>
-			<name>[Targets]/[exe] _ieee80211ah_swig_doc_tag/Object Files</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
-		</link>
-		<link>
-			<name>[Targets]/[exe] _ieee80211ah_swig_swig_tag</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
-		</link>
-		<link>
-			<name>[Targets]/[exe] _ieee80211ah_swig_swig_tag/</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
-		</link>
-		<link>
-			<name>[Targets]/[exe] _ieee80211ah_swig_swig_tag/Source Files</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
-		</link>
-		<link>
-			<name>[Targets]/[exe] _ieee80211ah_swig_swig_tag/Source Files/_ieee80211ah_swig_swig_tag.cpp</name>
-			<type>1</type>
-			<location>/usr/local/src/gr-ieee80211ah/swig/_ieee80211ah_swig_swig_tag.cpp</location>
-		</link>
-		<link>
-			<name>[Targets]/[exe] _ieee80211ah_swig_swig_tag/Header Files</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
-		</link>
-		<link>
-			<name>[Targets]/[exe] _ieee80211ah_swig_swig_tag/CMake Rules</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
-		</link>
-		<link>
-			<name>[Targets]/[exe] _ieee80211ah_swig_swig_tag/Resources</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
-		</link>
-		<link>
-			<name>[Targets]/[exe] _ieee80211ah_swig_swig_tag/Object Files</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
-		</link>
-		<link>
-			<name>[Targets]/[exe] ieee80211ah_swig_swig_2d0df</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
-		</link>
-		<link>
-			<name>[Targets]/[exe] ieee80211ah_swig_swig_2d0df/</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
-		</link>
-		<link>
-			<name>[Targets]/[exe] ieee80211ah_swig_swig_2d0df/Source Files</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
-		</link>
-		<link>
-			<name>[Targets]/[exe] ieee80211ah_swig_swig_2d0df/Source Files/ieee80211ah_swig_swig_2d0df.cpp</name>
-			<type>1</type>
-			<location>/usr/local/src/gr-ieee80211ah/swig/ieee80211ah_swig_swig_2d0df.cpp</location>
-		</link>
-		<link>
-			<name>[Targets]/[exe] ieee80211ah_swig_swig_2d0df/Header Files</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
-		</link>
-		<link>
-			<name>[Targets]/[exe] ieee80211ah_swig_swig_2d0df/CMake Rules</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
-		</link>
-		<link>
-			<name>[Targets]/[exe] ieee80211ah_swig_swig_2d0df/CMake Rules/ieee80211ah_swig_swig_2d0df.cpp.rule</name>
-			<type>1</type>
-			<location>/usr/local/src/gr-ieee80211ah/swig/ieee80211ah_swig_swig_2d0df.cpp.rule</location>
-		</link>
-		<link>
-			<name>[Targets]/[exe] ieee80211ah_swig_swig_2d0df/CMake Rules/ieee80211ah_swig_doc.i.rule</name>
-			<type>1</type>
-			<location>/usr/local/src/gr-ieee80211ah/swig/ieee80211ah_swig_doc.i.rule</location>
-		</link>
-		<link>
-			<name>[Targets]/[exe] ieee80211ah_swig_swig_2d0df/CMake Rules/ieee80211ah_swig.tag.rule</name>
-			<type>1</type>
-			<location>/usr/local/src/gr-ieee80211ah/swig/ieee80211ah_swig.tag.rule</location>
-		</link>
-		<link>
-			<name>[Targets]/[exe] ieee80211ah_swig_swig_2d0df/CMake Rules/index.xml.rule</name>
-			<type>1</type>
-			<location>/usr/local/src/gr-ieee80211ah/swig/ieee80211ah_swig_doc_swig_docs/xml/index.xml.rule</location>
-		</link>
-		<link>
-			<name>[Targets]/[exe] ieee80211ah_swig_swig_2d0df/Resources</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
-		</link>
-		<link>
-			<name>[Targets]/[exe] ieee80211ah_swig_swig_2d0df/Object Files</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
 		</link>
 	</linkedResources>
 </projectDescription>
